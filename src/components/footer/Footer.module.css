@@ -1,0 +1,10 @@
+/* FOOTER */
+
+.mainFooter {
+    background-color: rgb(92, 92, 92);
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 5rem;
+}

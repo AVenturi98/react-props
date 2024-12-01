@@ -1,0 +1,48 @@
+/* CARD */
+
+.card {
+    border: solid 1px black;
+    border-radius: 0.5rem;
+    max-width: 600px;
+    box-shadow: black 0 20px 30px;
+}
+
+.cardImg {
+    width: 100%;
+    object-position: top;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 1rem;
+}
+
+.titleCard {
+    font-weight: bold;
+    margin: 0.5rem auto;
+}
+
+.descriptionCard {
+    margin: 1rem auto;
+}
+
+.btn {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(0.96);
+}
+
+.btn:active {
+    background-color: yellowgreen;
+}
