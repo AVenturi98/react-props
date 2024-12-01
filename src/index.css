@@ -31,3 +31,28 @@ ol {
 .col-6 {
     width: calc(6 * 100% / 12);
 }
+
+.htmlColor {
+    background-color: darksalmon
+}
+
+.cssColor {
+    background-color: dodgerblue
+}
+
+.jsColor {
+    background-color: rgb(253, 188, 22)
+}
+
+.phpColor {
+    background-color: green;
+}
+
+.htmlColor,
+.cssColor,
+.jsColor,
+.phpColor {
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}

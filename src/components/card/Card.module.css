@@ -26,13 +26,19 @@
     margin: 0.5rem auto;
 }
 
+.tagsCard {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 .descriptionCard {
     margin: 1rem auto;
 }
 
 .btn {
     border: none;
-    background-color: orange;
+    background-color: orangered;
     color: white;
     padding: 0.3rem;
     border-radius: 0.5rem;
