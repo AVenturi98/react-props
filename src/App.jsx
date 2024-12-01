@@ -13,7 +13,7 @@ function App() {
       <div className="flex">
         {posts.map((post) =>
           <div key={post.id} className="col-6">
-            <Card title={post.title} content={post.content} tags={post.tags} published={post.published} />
+            <Card title={post.title} content={post.content} tags={post.tags} published={post.published} image={post.image} />
           </div>)}
       </div>
 

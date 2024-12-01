@@ -1,7 +1,7 @@
 import style from './Card.module.css'
-import image from '../../assets/31343C.svg'
+import imageDefault from '../../assets/31343C.svg'
 
-function Card({ title, content, tags, published }) {
+function Card({ title, content, tags, published, image }) {
 
     const elementTags = tags.map((tag, elmnTag, className) => {
 
@@ -20,7 +20,7 @@ function Card({ title, content, tags, published }) {
                 <main className="container">
                     <div className={style.card}>
                         <div className={style.cardImg}>
-                            <img className={style.image} src={image} alt="" />
+                            <img className={style.image} src={image || imageDefault} />
                         </div>
                         <div className={style.cardBody}>
                             <div className={style.titleCard}>{title}</div>
