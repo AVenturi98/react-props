@@ -13,7 +13,7 @@ function App() {
       <div className="flex">
         {posts.map((post) =>
           <div key={post.id} className="col-6">
-            <Card title={post.title} content={post.content} tags={post.tags} />
+            <Card title={post.title} content={post.content} tags={post.tags} published={post.published} />
           </div>)}
       </div>
 
@@ -23,26 +23,3 @@ function App() {
 }
 
 export default App
-
-
-
-/*
-Esercizio
-
-Prendendo ispirazione dal layout fornito in allegato, creare la pagina iniziale di un blog con un post inserito al suo interno. Assicuratevi di suddividere il layout in componenti appropriati.
-
-Step per creare il progetto:
-
-Creiamo un progetto React utilizzando vite npm create vite@latest .
-
-Installiamo le dipendenze npm install
-
-Lanciamo il server di sviluppo npm run dev
-
-Creiamo una cartella components nella quale inseriremo i nostri componenti
-
-BONUS:
-
-Invece di utilizzare un unico file index.css separiamo lo style utilizzando i CSS Modules 
-
-*/
