@@ -12,8 +12,13 @@ function App() {
     <>
       <Header />
       <div className="flex">
-        <Card />
+        {posts.map((post) =>
+          <div className="col-6" key={post.id}>
+            <Card />
+          </div>
+        )}
       </div>
+
       <Footer />
     </>
   )

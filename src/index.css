@@ -27,3 +27,7 @@ ol {
     justify-content: center;
     align-items: center
 }
+
+.col-6 {
+    width: calc(6 * 100% / 12);
+}
