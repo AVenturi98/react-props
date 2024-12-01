@@ -5,18 +5,16 @@ import { posts } from "./posts"
 
 function App() {
 
-  console.log(posts)
-
 
   return (
     <>
       <Header />
+
       <div className="flex">
         {posts.map((post) =>
-          <div className="col-6" key={post.id}>
-            <Card />
-          </div>
-        )}
+          <div key={post.id} className="col-6">
+            <Card title={post.title} content={post.content} tags={post.tags} />
+          </div>)}
       </div>
 
       <Footer />

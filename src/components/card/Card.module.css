@@ -1,5 +1,6 @@
 /* CARD */
 
+
 .card {
     border: solid 1px black;
     border-radius: 0.5rem;
@@ -8,7 +9,6 @@
 }
 
 .cardImg {
-    width: 100%;
     object-position: top;
 }
 
@@ -37,6 +37,7 @@
     padding: 0.3rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .btn:hover {
