@@ -17,11 +17,16 @@ ol {
     list-style: none;
 }
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .container {
     padding: 1.5rem;
 }
 
-.flex {
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,4 +60,8 @@ ol {
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+
+ul {
+    gap: 10px
 }
