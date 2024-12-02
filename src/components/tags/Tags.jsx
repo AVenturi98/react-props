@@ -14,5 +14,5 @@ export default function tagsFiltered() {
         }
     })
     // console.log(tags)
-    return tag.map((el) => <li className={`${el}Color`}>{el}</li>)
+    return tag.map((el) => <li key={el} className={`${el}Color`}>{el}</li>)
 }
