@@ -2,6 +2,7 @@ import Header from "./components/header/Header"
 import Card from "./components/card/Card"
 import Footer from "./components/footer/Footer"
 import { posts } from "./posts"
+import Tags from "./components/tags/Tags"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       </div>
       <div className="container">
         <ul className="row">
-          {tagsFiltered()}
+          <Tags />
         </ul>
       </div>
 
@@ -27,34 +28,3 @@ function App() {
 }
 
 export default App
-
-function tagsFiltered() {
-
-  const tag = []
-
-  posts.forEach((post) => {
-
-    const postTags = post.tags
-
-    for (let i = 0; i < postTags.length; i++) {
-
-      if (!tag.includes(postTags[i])) tag.push(postTags[i])
-    }
-  })
-  // console.log(tags)
-  return tag.map((el) => <li className={`${el}Color`}>{el}</li>)
-}
-
-
-/*
-
-const tags = post.tags
-            const arrayUnito = []
-            for (let i = 0; i < arrayUnito.length; i++) {
-              if (!arrayUnito.includes(tags[i]))
-                arrayUnito.push(tags[i]);
-            }
-            console.log(arrayUnito)
-
-
-*/
